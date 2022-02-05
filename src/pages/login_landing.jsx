@@ -5,6 +5,7 @@ function Login() {
     // event.preventDefault();
     // event.stopPropagation();
     const form = event.currentTarget;
+
     console.log(form.ControlInput1.value);
     localStorage.setItem("whateverIWant", form.ControlInput1.value);
   };
