@@ -1,4 +1,5 @@
 import { Figure } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import {Navbar, Container, NavDropdown, Nav} from "react-bootstrap";
 
 
@@ -11,17 +12,36 @@ function Homepage() {
     localStorage.setItem("whateverIWant", form.ControlInput1.value);
   };
   return (
+      
     <div className="App">
-      <Navbar bg="light" expand="lg">
-        <Container>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        
+    <style type="text/css">
+    {`
+    .btn-flat {
+      background-color: purple;
+      color: white;
+    }
+
+    .btn-xxl {
+      padding: 1rem 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .Navbar-dark {
+        background-color: purple;
+    }
+    `}
+  </style>
+      <Navbar expand="lg" class = "navbar">
+        <Container  class = "navcon">
+            <Navbar.Brand href="#home">Neighbourli</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="/home">Home</Nav.Link>
                 <Nav.Link href="/feed">Feed</Nav.Link>
                 <Nav.Link href="/">Login</Nav.Link>
-                
+                <Nav.Link href="/create_event">Create Event</Nav.Link>
                 <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -52,12 +72,18 @@ function Homepage() {
                     src="dota.png"
                 />
                 <Figure.Caption>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                    Image Caption here.
                 </Figure.Caption>
             </Figure>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         {/* </div> */}
+
+
+  <Button variant="flat" size="xxl">
+    Login
+  </Button>
+
     </div>
 
   );

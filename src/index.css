@@ -11,6 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Navbar Style */
+.navbar {
+  border: 5px outset yellow;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navcon {
+    border: 5px outset blue;
+    width: 1000px;
+    margin: auto;
+}
 
 /* Color of text */
 .myDiv {
@@ -29,3 +40,4 @@ code {
   position: relative;
   border: 3px solid green;
 }
+
