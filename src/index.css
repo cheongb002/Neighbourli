@@ -11,6 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Navbar Style */
+.navbar {
+  border: 5px outset yellow;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navcon {
+    border: 5px outset blue;
+    width: 1000px;
+    margin: auto;
+}
 
 /* Color of text */
 .myDiv {
@@ -18,11 +29,10 @@ code {
   background-color: lightblue;
   text-align: center;
   width: 1000px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  margin-top: 50px;
+  margin-left:auto;
+  margin-right:auto;
+
 }
 
 .container2 {
@@ -30,3 +40,4 @@ code {
   position: relative;
   border: 3px solid green;
 }
+
