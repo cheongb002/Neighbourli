@@ -23,7 +23,8 @@ export default function CreateEvent() {
 
     localStorage.setItem("events", JSON.stringify(event_list));
 
-    // redirect to event page
+    // redirect to home page
+    window.location.href = "/home";
   };
   return (
     <div className="App">
