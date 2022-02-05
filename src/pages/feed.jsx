@@ -5,6 +5,7 @@ import {
   Nav,
   Card,
   Row,
+  CloseButton,
 } from "react-bootstrap";
 
 export default function Feed() {
@@ -19,6 +20,7 @@ export default function Feed() {
     // </Stack>
     <Card style={{ width: "18rem" }}>
       <Card.Body>
+        <CloseButton />
         <Card.Title>{event_single.name}</Card.Title>
         <Card.Text>Date: {event_single.date}</Card.Text>
         <Card.Text>Time: {event_single.time}</Card.Text>
